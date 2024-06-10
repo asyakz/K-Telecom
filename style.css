@@ -1,0 +1,488 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/opensans-regular-webfont.woff2') format('woff2'),
+    url('./fonts/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera_round_pro_black';
+  src: url('./fonts/typemates_-_ceraroundpro-black-webfont.woff2') format('woff2'),
+    url('./fonts/typemates_-_ceraroundpro-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera_round_pro_bold';
+  src: url('./fonts/typemates_-_ceraroundpro-bold-webfont.woff2') format('woff2'),
+    url('./fonts/typemates_-_ceraroundpro-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera_round_pro_medium';
+  src: url('./fonts/typemates_-_ceraroundpro-medium-webfont.woff2') format('woff2'),
+    url('./fonts/typemates_-_ceraroundpro-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cera_round_pro_regular';
+  src: url('./fonts/typemates_-_ceraroundpro-regular-webfont.woff2') format('woff2'),
+    url('./fonts/typemates_-_ceraroundpro-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: #2D2D2D;
+}
+
+.content {
+  margin: 0 auto;
+  width: 1000px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #C81059;
+  border: 1px solid #C81059;
+  text-align: center;
+  min-height: 45px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: 'Cera_round_pro_medium';
+  font-size: 14px;
+  border: 1px solid #C81059;
+  transition: color .8s ease,
+    border .8s ease,
+    background-color .8s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #C81059;
+  background-color: #ffffff;
+  border: 1px solid #C81059;
+}
+
+.btn:active {
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.title {
+  font-family: 'Cera_round_pro_medium';
+  font-size: 28px;
+}
+
+/* HEADER */
+
+header {
+  max-width: 100%;
+}
+
+.header__content {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 80px;
+}
+
+/* SECTION HERO */
+
+.hero {
+  max-width: 100%;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #F2F6F8;
+  margin-bottom: 50px;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__caption {
+  font-family: 'Cera_round_pro_bold';
+  max-width: 423px;
+  font-size: 30px;
+  line-height: 45px;
+  margin-bottom: 15px;
+}
+
+.hero__list {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.hero__btn {
+  min-width: 203px;
+  text-decoration: none;
+  padding: 10px 60px;
+}
+
+/* SECTION TARIFF PLANS */
+
+.tariff_plans {
+  margin-bottom: 35px;
+}
+
+.tariff_plans__content {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.tariff_plans__slide__content {
+  padding: 30px;
+}
+
+.tariff_plans__title {
+  padding-left: 50px;
+}
+
+.tariff_plans__swiper {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.tariff_plans__swiper-wrapper {
+  height: 100%;
+  max-height: 481px;
+}
+
+.tariff_plans__slide {
+  width: 347px !important;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px rgba(172, 172, 172, 0.5);
+}
+
+.tariff_plans__slide__title {
+  display: block;
+  font-family: 'Cera_round_pro_medium';
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tariff_plans__slide__subtitle {
+  display: block;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #ACACAC;
+  margin-bottom: 5px;
+}
+
+.tariff_plans__slide__speed {
+  display: block;
+  font-family: 'Cera_round_pro_medium';
+  font-size: 25px;
+  color: #C81059;
+}
+
+.tariff_plans__slide__subtitle {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: rgba(85, 85, 85, 0.5);
+  margin-bottom: 5px;
+}
+
+.tariff_plans__slide__descr {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.tariff_plans__slide__label {
+  font-family: 'Cera_round_pro_regular';
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.tariff_plans__slide__price {
+  font-family: 'Cera_round_pro_bold';
+  font-size: 40px;
+  color: #000000;
+}
+
+.tariff_plans__slide__month {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: rgba(85, 85, 85, 0.5);
+}
+
+.tariff_plans__slide__check-view {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.tariff_plans__slide__text {
+  font-family: 'Open Sans';
+  font-size: 12px;
+  color: rgba(85, 85, 85, 0.5);
+  margin-bottom: 20px;
+}
+
+.tariff_plans__slide__btn {
+  width: 100%;
+}
+
+.tariff_plans__slide__btn--active {
+  background-color: #0099C8;
+}
+
+/* CHECKBOX */
+
+.checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.checkbox-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: #fff;
+  transition: .3s;
+}
+
+.checkbox-icon {
+  opacity: 0;
+  transition: .3s;
+}
+
+.checkbox:checked+.checkbox-view {
+  background-color: #0099C8;
+}
+
+.checkbox:checked+.checkbox-view .checkbox-icon {
+  opacity: 1;
+}
+
+/* SECTION CONNECTION */
+
+.connection {
+  margin-bottom: 40px;
+}
+
+.connection__bg-form {
+  padding: 50px;
+  background-color: #F2F6F8;
+  min-height: 341px;
+  border-radius: 20px;
+}
+
+.connection__title {
+  margin-bottom: 25px;
+}
+
+.connection__select-container {
+  margin-bottom: 20px;
+}
+
+.input-text {
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 45px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.connection__name {
+  width: 183px;
+}
+
+.connection__phone {
+  width: 352px;
+}
+
+.connection__input-text-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.connection__submit-btn {
+  min-width: 202px;
+}
+
+.input-text::-webkit-input-placeholder {
+  color: rgba(45, 45, 45, 0.3);
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+
+.input-text::-moz-placeholder {
+  color: rgba(45, 45, 45, 0.3);
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+
+.input-text::-moz-placeholder {
+  color: rgba(45, 45, 45, 0.3);
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+
+.input-text:-ms-input-placeholder {
+  color: rgba(45, 45, 45, 0.3);
+  font-family: 'Open Sans';
+  font-size: 12px;
+}
+
+.connection__check-view {
+  margin-right: 10px;
+}
+
+.connection__checkbox-label {
+  color: #989898;
+  font-family: 'Cera_round_pro_regular';
+  font-size: 14px;
+}
+
+.connection__checkbox-label a {
+  color: #989898;
+  font-family: 'Cera_round_pro_regular';
+  font-size: 14px;
+}
+
+/* CHECKBOX-SELECT */
+
+.connection__checkbox-select {
+  display: none;
+}
+
+.connection__checkbox-select+label {
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 8px;
+  min-width: 147px;
+  min-height: 35px;
+  margin-bottom: 0;
+  font-family: 'Cera_round_pro_regular';
+  font-size: 12px;
+  color: #2D2D2D;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid rgba(45, 45, 45, 0.1);
+  border-radius: 10px;
+}
+
+.connection__checkbox-select:checked+label {
+  border: 1px solid #0099C8;
+  color: #0099C8;
+}
+
+/* FOOTER */
+
+footer {
+  margin-bottom: 20px;
+}
+
+.footer__content-inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid rgba(45, 45, 45, 0.1);
+  border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.footer__left {
+  flex-basis: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__right {
+  justify-content: end;
+  align-items: center;
+}
+
+.footer__text {
+  display: block;
+  color: #C2C2C2;
+  font-family: 'Cera_round_pro_regular';
+  font-size: 12px; 
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__social-item {
+  cursor: pointer;
+}
+
+@media (max-width: 319px) {
+  body {
+    display: none;
+  }
+}

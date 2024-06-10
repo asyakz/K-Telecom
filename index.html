@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="script.js"></script>
+
+  <title>K-Telecom</title>
+</head>
+
+<body class="body">
+
+  <header>
+    <div class="content header__content">
+      <img class="header__logo" src="./img/logo.png" alt="Логотип">
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="content hero__content">
+
+        <div class="hero__text">
+          <h1 class="hero__caption">Экономия нервов и&nbsp;денег&nbsp; &mdash; интернет К-Телеком</h1>
+          <ul class="hero__list">
+            <li class="hero__item">
+              5&nbsp;тарифов для многоквартирных и&nbsp;4&nbsp;для частных домов
+            </li>
+            <li class="hero__item">
+              безлимит подключенных устройств
+            </li>
+            <li class="hero__item">
+              комфортная поддержка 24/7
+            </li>
+          </ul>
+          <a class="btn hero__btn" href="#tariff-plans">
+            Подробнее
+          </a>
+        </div>
+
+        <img class="hero__img" src="./img//hero-img.png" alt="">
+
+      </div>
+
+    </section>
+
+    <section class="tariff_plans" id="tariff-plans">
+      <div class="tariff_plans__content">
+        <h2 class="tariff_plans__title title">Тарифные планы</h2>
+
+        <div class="swiper tariff_plans__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper tariff_plans__swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide tariff_plans__slide slide-1">
+              <div class="tariff_plans__slide__content">
+                <h3 class="tariff_plans__slide__title">Мой клик</h3>
+                <span class="tariff_plans__slide__subtitle">Скорость интернета</span>
+                <span class="tariff_plans__slide__speed">до&nbsp;40&nbsp;Мбит/с</span>
+                <p class="tariff_plans__slide__descr">
+                  Отличный вариант для пенсионеров, выполнения определенных задач и&nbsp;работе с&nbsp;файлами различных
+                  размеров.
+                </p>
+                <label for="checkbox-1" class="checkbox-label tariff_plans__slide__label">
+                  <input type="checkbox" id="checkbox-1" class="tariff_plans__slide__checkbox checkbox">
+                  <span class="checkbox-view tariff_plans__slide__check-view">
+                    <svg class="checkbox-icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.35986 5.67094L4.57986 8.18003L10.0999 1.28003" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  ТВ + 100&nbsp;₽&nbsp;<br />(пакет “Базовый”)
+                </label>
+                <span class="tariff_plans__slide__price">399 ₽&nbsp;</span>
+                <span class="tariff_plans__slide__month">в месяц</span>
+                <p class="tariff_plans__slide__text">
+                  *итоговая цена зависит от&nbsp;варианта оплаты и&nbsp;пакета&nbsp;ТВ при необходимости
+                </p>
+                <button class="btn tariff_plans__slide__btn">Выбрать тариф</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide tariff_plans__slide slide-2">
+              <div class="tariff_plans__slide__content">
+                <h3 class="tariff_plans__slide__title">Резвый клик</h3>
+                <span class="tariff_plans__slide__subtitle">Скорость интернета</span>
+                <span class="tariff_plans__slide__speed">80-100&nbsp;Мбит/с</span>
+                <p class="tariff_plans__slide__descr">
+                  Отличный вариант для всей семьи. Общайтесь в&nbsp;соцсетях и&nbsp;смотрите любимые фильмы
+                  и&nbsp;сериалы!
+                </p>
+                <label for="checkbox-2" class="checkbox-label tariff_plans__slide__label">
+                  <input type="checkbox" id="checkbox-2" class="tariff_plans__slide__checkbox checkbox">
+                  <span class="checkbox-view tariff_plans__slide__check-view">
+                    <svg class="checkbox-icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.35986 5.67094L4.57986 8.18003L10.0999 1.28003" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  ТВ + 100&nbsp;₽&nbsp;<br />(пакет “Базовый”)
+                </label>
+                <span class="tariff_plans__slide__price">449 ₽&nbsp;</span>
+                <span class="tariff_plans__slide__month">в месяц</span>
+                <p class="tariff_plans__slide__text">
+                  *итоговая цена зависит от&nbsp;варианта оплаты и&nbsp;пакета&nbsp;ТВ при необходимости
+                </p>
+                <button class="btn tariff_plans__slide__btn">Выбрать тариф</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide tariff_plans__slide slide-3">
+              <div class="tariff_plans__slide__content">
+                <h3 class="tariff_plans__slide__title">Мой клик</h3>
+                <span class="tariff_plans__slide__subtitle">Скорость интернета</span>
+                <span class="tariff_plans__slide__speed">до&nbsp;40&nbsp;Мбит/с</span>
+                <p class="tariff_plans__slide__descr">
+                  Отличный вариант для пенсионеров, выполнения определенных задач и&nbsp;работе с&nbsp;файлами различных
+                  размеров.
+                </p>
+                <label for="checkbox-3" class="checkbox-label tariff_plans__slide__label">
+                  <input type="checkbox" id="checkbox-3" class="tariff_plans__slide__checkbox checkbox">
+                  <span class="checkbox-view tariff_plans__slide__check-view">
+                    <svg class="checkbox-icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.35986 5.67094L4.57986 8.18003L10.0999 1.28003" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  ТВ + 100&nbsp;₽&nbsp;<br />(пакет “Базовый”)
+                </label>
+                <span class="tariff_plans__slide__price">399 ₽&nbsp;</span>
+                <span class="tariff_plans__slide__month">в месяц</span>
+                <p class="tariff_plans__slide__text">
+                  *итоговая цена зависит от&nbsp;варианта оплаты и&nbsp;пакета&nbsp;ТВ при необходимости
+                </p>
+                <button class="btn tariff_plans__slide__btn">Выбрать тариф</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide tariff_plans__slide slide-4">
+              <div class="tariff_plans__slide__content">
+                <h3 class="tariff_plans__slide__title">Резвый клик</h3>
+                <span class="tariff_plans__slide__subtitle">Скорость интернета</span>
+                <span class="tariff_plans__slide__speed">80-100&nbsp;Мбит/с</span>
+                <p class="tariff_plans__slide__descr">
+                  Отличный вариант для всей семьи. Общайтесь в&nbsp;соцсетях и&nbsp;смотрите любимые фильмы
+                  и&nbsp;сериалы!
+                </p>
+                <label for="checkbox-4" class="checkbox-label tariff_plans__slide__label">
+                  <input type="checkbox" id="checkbox-4" class="tariff_plans__slide__checkbox checkbox">
+                  <span class="checkbox-view tariff_plans__slide__check-view">
+                    <svg class="checkbox-icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.35986 5.67094L4.57986 8.18003L10.0999 1.28003" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  ТВ + 100&nbsp;₽&nbsp;<br />(пакет “Базовый”)
+                </label>
+                <span class="tariff_plans__slide__price">449 ₽&nbsp;</span>
+                <span class="tariff_plans__slide__month">в месяц</span>
+                <p class="tariff_plans__slide__text">
+                  *итоговая цена зависит от&nbsp;варианта оплаты и&nbsp;пакета&nbsp;ТВ при необходимости
+                </p>
+                <button class="btn tariff_plans__slide__btn">Выбрать тариф</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide tariff_plans__slide slide-5">
+              <div class="tariff_plans__slide__content">
+                <h3 class="tariff_plans__slide__title">Мой клик</h3>
+                <span class="tariff_plans__slide__subtitle">Скорость интернета</span>
+                <span class="tariff_plans__slide__speed">до&nbsp;40&nbsp;Мбит/с</span>
+                <p class="tariff_plans__slide__descr">
+                  Отличный вариант для пенсионеров, выполнения определенных задач и&nbsp;работе с&nbsp;файлами различных
+                  размеров.
+                </p>
+                <label for="checkbox-5" class="checkbox-label tariff_plans__slide__label">
+                  <input type="checkbox" id="checkbox-5" class="tariff_plans__slide__checkbox checkbox">
+                  <span class="checkbox-view tariff_plans__slide__check-view">
+                    <svg class="checkbox-icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.35986 5.67094L4.57986 8.18003L10.0999 1.28003" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  ТВ + 100&nbsp;₽&nbsp;<br />(пакет “Базовый”)
+                </label>
+                <span class="tariff_plans__slide__price">399 ₽&nbsp;</span>
+                <span class="tariff_plans__slide__month">в месяц</span>
+                <p class="tariff_plans__slide__text">
+                  *итоговая цена зависит от&nbsp;варианта оплаты и&nbsp;пакета&nbsp;ТВ при необходимости
+                </p>
+                <button class="btn tariff_plans__slide__btn">Выбрать тариф</button>
+              </div>
+            </div>
+
+            <div class="swiper-slide tariff_plans__slide slide-6">
+              <div class="tariff_plans__slide__content">
+                <h3 class="tariff_plans__slide__title">Мой клик</h3>
+                <span class="tariff_plans__slide__subtitle">Скорость интернета</span>
+                <span class="tariff_plans__slide__speed">до&nbsp;40&nbsp;Мбит/с</span>
+                <p class="tariff_plans__slide__descr">
+                  Отличный вариант для пенсионеров, выполнения определенных задач и&nbsp;работе с&nbsp;файлами различных
+                  размеров.
+                </p>
+                <label for="checkbox-6" class="checkbox-label tariff_plans__slide__label">
+                  <input type="checkbox" id="checkbox-6" class="tariff_plans__slide__checkbox checkbox">
+                  <span class="checkbox-view tariff_plans__slide__check-view">
+                    <svg class="checkbox-icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.35986 5.67094L4.57986 8.18003L10.0999 1.28003" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  ТВ + 100&nbsp;₽&nbsp;<br />(пакет “Базовый”)
+                </label>
+                <span class="tariff_plans__slide__price">399 ₽&nbsp;</span>
+                <span class="tariff_plans__slide__month">в месяц</span>
+                <p class="tariff_plans__slide__text">
+                  *итоговая цена зависит от&nbsp;варианта оплаты и&nbsp;пакета&nbsp;ТВ при необходимости
+                </p>
+                <button class="btn tariff_plans__slide__btn">Выбрать тариф</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="connection">
+      <div class="connection__content content">
+        <div class="connection__bg-form">
+          <h2 class="connection__title title">Подключиться просто!</h2>
+
+          <form action="" class="connection__form">
+            <div class="connection__select-container">
+              <input class="connection__checkbox-select" type="checkbox" id="chk1" name="select" value="Интернет">
+              <label for="chk1">Интернет</label>
+              <input class="connection__checkbox-select" type="checkbox" id="chk2" name="select" value="Интернет + ТВ">
+              <label for="chk2">Интернет + ТВ</label>
+              <input class="connection__checkbox-select" type="checkbox" id="chk3" name="select" value="Телефония">
+              <label for="chk3">Телефония</label>
+              <input class="connection__checkbox-select" type="checkbox" id="chk4" name="select"
+                value="Видеонаблюдение">
+              <label for="chk4">Видеонаблюдение</label>
+            </div>
+            <div class="connection__input-text-container">
+              <input class="connection__name input-text" type="text" placeholder="Имя">
+              <input class="connection__phone input-text" type="phone" placeholder="Номер телефона">
+              <button class="connection__submit-btn btn" type="submit">Отправить</button>
+            </div>
+            <label for="checkbox-7" class="checkbox-label connection__checkbox-label">
+              <input type="checkbox" id="checkbox-7" class="connection__checkbox checkbox">
+              <span class="checkbox-view connection__check-view">
+                <svg class="checkbox-icon" width="12" height="10" viewBox="0 0 12 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.35986 5.67094L4.57986 8.18003L10.0999 1.28003" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              Я&nbsp;соглашаюсь на&nbsp;условия&nbsp;<a class="connection__checkbox-link" href="">обработки данных</a>
+            </label>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__content content">
+      <div class="footer__content-inside">
+        <div class="footer__left">
+          <img class="footer__logo" src="./img/logo.png" alt="Логотип">
+          <span class="footer__text">&copy;&nbsp;2018&ndash;2022&nbsp;ООО &laquo;К-Телеком&raquo;</span>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__social-list">
+
+            <li class="footer__social-item">
+              <a class="footer__social-link" tabindex="0" aria-label="Инстаграм" target="_blank"
+                href="https://www.instagram.com/">
+                <img src="./img/insta.png" alt="Инстаграм ссылка">
+
+              </a>
+            </li>
+
+            <li class="footer__social-item">
+              <a class="footer__social-link" tabindex="0" aria-label="Youtube" target="_blank"
+                href="https://www.youtube.com/">
+                <img src="./img/youtube.png" alt="Youtube ссылка">
+              </a>
+            </li>
+
+            <li class="footer__social-item">
+              <a class="footer__social-link" tabindex="0" aria-label="Вконтакте" target="_blank" href="http://vk.com/">
+                <img src="./img/vk.png" alt="Вконтакте ссылка">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
