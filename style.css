@@ -49,6 +49,7 @@ ul {
 
 body {
   margin: 0;
+  height: 100vh;
 }
 
 h1,
@@ -526,9 +527,14 @@ footer {
   cursor: pointer;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .footer__left {
     flex-basis: 50%;
+  }
+
+  .tariff_plans {
+    width: 100vw !important;
+    overflow: hidden;
   }
 }
 
@@ -661,6 +667,8 @@ footer {
   }
 
   .tariff_plans__swiper {
+    /* max-width: 1000px; */
+    /* overflow: hidden; */
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;

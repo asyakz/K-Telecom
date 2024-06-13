@@ -1,33 +1,34 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  loop: true,
+document.addEventListener('DOMContentLoaded', function () {
 
-  slidesPerView: 3,
-  spaceBetween: 25,
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
 
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 3,
-      
+    slidesPerView: 3,
+    spaceBetween: 25,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+
+      }
     }
-  }
-});
+  });
 
-document.addEventListener('DOMContentLoaded', function() {
   const buttons = document.querySelectorAll('.tariff_plans__slide__btn');
   buttons.forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
       document.querySelectorAll('.tariff_plans__slide__btn').forEach(e => {
         e.textContent = 'Выбрать тариф'
         e.classList.remove('tariff_plans__slide__btn--active');
@@ -39,19 +40,20 @@ document.addEventListener('DOMContentLoaded', function() {
       this.textContent = newButtonText;
     });
   });
-});
 
-// Плавный скролл
 
-const smoothLinks = document.querySelectorAll('a[href^="#"]');
-for (let smoothLink of smoothLinks) {
+  // Плавный скролл
+
+  const smoothLinks = document.querySelectorAll('a[href^="#"]');
+  for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = smoothLink.getAttribute('href');
+      e.preventDefault();
+      const id = smoothLink.getAttribute('href');
 
-        document.querySelector(id).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     });
-};
+  };
+});
